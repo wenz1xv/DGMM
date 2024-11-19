@@ -1,0 +1,84 @@
+--------------------------------------------------------------------------------
+JobId          : dellt7920-0-673c15f6
+Name           : vsw_run-LIGPREP-001
+Program        : LigPrep
+Version        : 2023-4 build 132
+Host           : dellt7920
+Dir            : /opt/jupyter/molmod/DGMM_github/DGMM/dock_comp/schrodinger_run/schrodinger_SP/run_0
+HostEntry      : localhost
+JobHost        : dellt7920
+JobDir         : /home/zyman/.schrodinger/tmp/vsw_run-LIGPREP-001
+JobSchrodinger : /opt/schrodinger2023-4
+Commandline    : /opt/schrodinger2023-4/ligprep -kp -imae vsw_run-LIGPREP-001-in.maegz -omae vsw_run-LIGPREP-001.maegz -retain -lab -epik -W e,-ph,7.000000,-pht,2.000000,-ms,16 -i 2 -epik_metal_binding -t 8 -s 32 -m 4 -HOST localhost
+StartTime      : 2024-11-19-12:37:10
+--------------------------------------------------------------------------------
+LigPrep (version 68132). Copyright Schrodinger, LLC. All rights reserved.
+
+LigPrep command:
+$SCHRODINGER/ligprep -kp -retain  -lab -epik -W e,-ph,7.000000,-pht,2.000000,-ms,16 -i 2 -epik_metal_binding -t 8 -s 32 -m 4 -imae vsw_run-LIGPREP-001-in.maegz -omae vsw_run-LIGPREP-001.maegz
+
+Processing steps:
+$DO.sdstereoexpander -add_hydrogens -max_output 32 -max_generated 1024 <infile.mae> <outfile.mae>
+$DO/labeller.py -a sdstereoexpander <infile.mae> <outfile.mae>
+$DO.htreat -t All-None -a all -s -l 200 <infile.mae> <outfile.mae>
+$DO.desalter <infile.mae> <outfile.mae>
+$DO.neutralizer -m 200 <infile.mae> <outfile.mae>
+$DO/labeller.py -a neutralizer <infile.mae> <outfile.mae>
+$DO.guard <infile.mae> <outfile.mae>
+$DO.epik.py -ph 7.000000 -pht 2.000000 -ms 16 -tn 8 -ma 200 -metal_binding -imae <infile.mae> -omae <outfile.mae>
+$DO/labeller.py -a epik <infile.mae> <outfile.mae>
+$DO.stereoizer -label_specified_chiralities -n 32 <infile.mae> <outfile.mae>
+$DO/labeller.py -a stereoizer <infile.mae> <outfile.mae>
+$DO.lp_noredund <infile.mae> <outfile.mae>
+$DO.cgx -optimize -ffld 14 -epsilon 10.0 <infile.mae> <outfile.mae>
+$DO.filterstereo -max_stereo 4 <infile.mae> <outfile.mae>
+
+DO=$SCHRODINGER/run python3 -m schrodinger.application.macromodel.packages.ligprep3
+
+# counts of output and dropped structures after processing steps
+# index  sdstex  htreat  desalt  neutra   guard   epik   stereo  redund    cgx   filter  title
+       1   1/0     1/0     1/0     1/0     1/0     1/0     2/0     2/0     2/0     2/0   '0'
+Metal Binding:    Using non-metal probability:          1.000000e+00
+       2   1/0     1/0     1/0     1/0     1/0     1/0     2/0     2/0     2/0     2/0   '1'
+Metal Binding:    Using non-metal probability:          6.968983e-01
+Metal Binding:    Using non-metal probability:          3.031017e-01
+       3   1/0     1/0     1/0     1/0     1/0     2/0     4/0     4/0     4/0     4/0   '2'
+       4   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3'
+Metal Binding:    Using non-metal probability:          9.941444e-01
+       5   1/0     1/0     1/0     1/0     1/0     1/0     2/0     2/0     2/0     2/0   '4'
+Metal Binding:    Using non-metal probability:          1.000000e+00
+       6   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '5'
+Metal Binding:    Using non-metal probability:          1.000000e+00
+       7   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '6'
+       8   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '7'
+Metal Binding:    Using non-metal probability:          9.977449e-01
+       9   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '8'
+Metal Binding:    Using non-metal probability:          9.955932e-01
+      10   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '9'
+      11   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '10'
+      12   1/0     1/0     1/0     1/0     1/0     2/0     4/0     4/0     4/0     4/0   '11'
+Metal Binding:    Using non-metal probability:          1.000000e+00
+      13   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '12'
+      14   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '13'
+Metal Binding:    Using non-metal probability:          1.000000e+00
+      15   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '14'
+Metal Binding:    Using non-metal probability:          1.000000e+00
+      16   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '15'
+Metal Binding:    Using non-metal probability:          7.253326e-01
+Metal Binding:    Using non-metal probability:          2.643691e-01
+Metal Binding:    Using non-metal probability:          1.029826e-02
+      17   1/0     1/0     1/0     1/0     1/0     3/0     3/0     3/0     3/0     3/0   '16'
+      18   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '17'
+      19   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '18'
+Metal Binding:    Using non-metal probability:          1.000000e+00
+      20   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '19'
+Metal Binding:    Using non-metal probability:          6.944951e-01
+Metal Binding:    Using non-metal probability:          3.055049e-01
+      21   1/0     1/0     1/0     1/0     1/0     2/0     2/0     2/0     2/0     2/0   '20'
+Metal Binding:    Using non-metal probability:          1.000000e+00
+      22   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '21'
+
+# of processed structures in "vsw_run-LIGPREP-001.maegz" : 34
+# of dropped structures in "vsw_run-LIGPREP-001-dropped.maegz" : 0
+
+backend run time: 0 hours 0 minutes 2.949 seconds

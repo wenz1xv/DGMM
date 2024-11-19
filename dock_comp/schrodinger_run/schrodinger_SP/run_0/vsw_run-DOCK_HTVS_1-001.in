@@ -1,0 +1,10 @@
+AMIDE_MODE   penal
+EPIK_PENALTIES   False
+GRIDFILE   /opt/jupyter/molmod/DGMM_github/DGMM/dock_comp/schrodinger_run/schrodinger_SP/run_0/grid.zip
+LIGANDFILE   vsw_run-PRE_DOCK_HTVS_1-001-in.maegz
+MAXATOMS   300
+MAXROTBONDS   50
+NREPORT   33
+POSE_OUTTYPE   poseviewer
+POSTDOCK   False
+PRECISION   SP

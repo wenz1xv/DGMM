@@ -1,0 +1,35 @@
+Stage vsw_run-PRE_DOCK_HTVS_1 initializing...
+
+Running stage: vsw_run-PRE_DOCK_HTVS_1
+SCHRODINGER: /opt/schrodinger2023-4
+PYTHONPATH: 
+Job ID: dellt7920-0-673c1601
+Time: Tue Nov 19 12:37:22 2024
+Stage started successfully
+
+Python version: 83132
+The number of output files will be derived from -NJOBS value
+GENCODES is False; ignoring UNIQUEFIELD keyword
+GENCODES is False; ignoring OUTVARIANTFIELD keyword
+GENCODES is False; ignoring OUTCOMPOUNDFIELD keyword
+Counting number of input structures
+Number of input structures: 33
+Adjusting number of jobs to yield 4000-40000 ligands per job
+Will generate 1 subjobs
+
+Processing ligand files...
+
+Number of input structures: 33
+Number of processed structures: 33
+Number of processed compounds: 22
+Number of output files: 1
+
+Number of (compounds, structures) for each output file:
+1:(22, 33)
+
+STAGE COMPLETED. Elapsed time: 0 seconds
+
+    Output #1 (vsw_run-DOCK_HTVS_1_INPUT) [structures(33)]:
+      vsw_run-PRE_DOCK_HTVS_1-001-in.maegz
+Moving vsw_run-PRE_DOCK_HTVS_1-001-in.maegz to /opt/jupyter/molmod/DGMM_github/DGMM/dock_comp/schrodinger_run/schrodinger_SP/run_0/vsw_run-PRE_DOCK_HTVS_1-001-in.maegz
+Done.

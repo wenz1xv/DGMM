@@ -1,0 +1,136 @@
+
+===========================================
+     Virtual Screening Workflow (VSW)
+     Python version: 83132
+===========================================
+
+SCHRODINGER: /opt/schrodinger2023-4
+PYTHONPATH: 
+Started at: Tue Nov 19 12:36:59 2024
+Driver JobId: dellt7920-0-673c15ea
+Launch directory: /opt/jupyter/molmod/DGMM_github/DGMM/dock_comp/schrodinger_run/schrodinger_SP/run_0
+Job directory: /opt/jupyter/molmod/DGMM_github/DGMM/dock_comp/schrodinger_run/schrodinger_SP/run_0
+Running with -LOCAL: True
+Input File: vsw_run.inp
+
+To restart the job upon failure, run this command:
+   $SCHRODINGER/vsw vsw_run.inp -RESTART
+
+Setting njobs to: 8
+Setting adjust to: True
+Setting cleanup to: True
+
+Starting the pipeline...
+
+Will listen to "pipeline" messages from stages
+General subjob hosts: [('localhost', 1)]
+glide hosts: [('localhost', 8)]
+ligprep hosts: [('localhost', 8)]
+Number of subjobs: 8
+Adjust subjobs: True
+No force job: Will terminate upon first docking subjob failure instead of merging output from successful Glide subjobs.
+Maximum retries: 2
+Cleanup: True
+
+    Stage: vsw_run-GENLIGAND
+        OUTFORMAT: maestro
+
+    Stage: vsw_run-LIGPREP
+        RECOMBINE: YES
+        RETITLE: YES
+        MIXLIGS: YES
+        SKIP_BAD_LIGANDS: YES
+        UNIQUEFIELD: NONE
+        OUTCOMPOUNDFIELD: s_vsw_compound_code
+        USE_EPIK: YES
+        METAL_BINDING: YES
+        PH: 7.0
+        PHT: 2.0
+        NRINGCONFS: 1
+        COMBINEOUTS: NO
+        STEREO_SOURCE: parities
+        NUM_STEREOISOMERS: 32
+        MAX_STEREOISOMERS: 4
+        REGULARIZE: NO
+
+    Stage: vsw_run-POSTLIGPREP
+        UNIQUEFIELD: s_vsw_compound_code
+        OUTVARIANTFIELD: s_vsw_variant
+        PRESERVE_NJOBS: YES
+        REMOVE_PENALIZED_STATES: YES
+
+    Stage: vsw_run-PRE_DOCK_HTVS_1
+        NUMOUT: njobs
+        OUTFORMAT: maegz
+        MIN_SUBJOB_STS: 4000
+        MAX_SUBJOB_STS: 40000
+        GENCODES: NO
+        UNIQUEFIELD: s_vsw_compound_code
+
+    Stage: vsw_run-DOCK_HTVS_1
+        RECOMBINE: NO
+        PRECISION: SP
+        UNIQUEFIELD: s_vsw_compound_code
+        PERCENT_TO_KEEP: 100.0
+        DOCKING_METHOD: confgen
+        POSES_PER_LIG: 1
+        BEST_BY_TITLE: YES
+        LIG_VSCALE: 0.8
+        LIG_CCUT: 0.15
+        MAXATOMS: 300
+        MAXROTBONDS: 50
+        AMIDE_MODE: penal
+        POSE_OUTTYPE: PV
+        POSTDOCK: NO
+        POSTDOCKSTRAIN: NO
+        COMPRESS_POSES: YES
+        EPIK_PENALTIES: NO
+        FORCEPLANAR: NO
+
+    Stage: vsw_run-ConvertOut
+        OUTFORMAT: smilescsv
+
+Status of stages:
+  Stage Name                     Status
+  ------------------------------ ---------
+  vsw_run-GENLIGAND              WAITING
+  vsw_run-LIGPREP                WAITING
+  vsw_run-POSTLIGPREP            WAITING
+  vsw_run-PRE_DOCK_HTVS_1        WAITING
+  vsw_run-DOCK_HTVS_1            WAITING
+  vsw_run-ConvertOut             WAITING
+
+Stage activity keys...
+  C: Number of completed stages
+  A: Number of active/running stages
+  W: Number of waiting/pending stages
+
+C A W | Stage name and activity
+- - - | -----------------------
+0 0 6 | vsw_run-GENLIGAND (dellt7920-0-673c15ee) launched.
+1 0 5 | vsw_run-GENLIGAND (dellt7920-0-673c15ee) completed.
+            Output: vsw_run-LIGANDS
+1 0 5 | vsw_run-LIGPREP (dellt7920-0-673c15f1) launched.
+2 0 4 | vsw_run-LIGPREP (dellt7920-0-673c15f1) completed.
+            Output: vsw_run-LIGPREP_OUT
+Cleaning up intermediate files: vsw_run-LIGANDS
+2 0 4 | vsw_run-POSTLIGPREP (dellt7920-0-673c15fe) launched.
+3 0 3 | vsw_run-POSTLIGPREP (dellt7920-0-673c15fe) completed.
+            Output: vsw_run-POSTLIGPREP_OUT (33)
+Cleaning up intermediate files: vsw_run-LIGPREP_OUT
+3 0 3 | vsw_run-PRE_DOCK_HTVS_1 (dellt7920-0-673c1601) launched.
+4 0 2 | vsw_run-PRE_DOCK_HTVS_1 (dellt7920-0-673c1601) completed.
+            Output: vsw_run-DOCK_HTVS_1_INPUT (33)
+Cleaning up intermediate files: vsw_run-POSTLIGPREP_OUT
+4 0 2 | vsw_run-DOCK_HTVS_1 (dellt7920-0-673c1605) launched.
+5 0 1 | vsw_run-DOCK_HTVS_1 (dellt7920-0-673c1605) completed.
+            Output: vsw_run-HTVS_OUT_1 (23)
+Cleaning up intermediate files: vsw_run-DOCK_HTVS_1_INPUT
+5 0 1 | vsw_run-ConvertOut (dellt7920-0-673c1847) launched.
+6 0 0 | vsw_run-ConvertOut (dellt7920-0-673c1847) completed.
+            Output: vsw_run-HTVS_OUT_csv
+Cleaning up intermediate files: vsw_run-HTVS_OUT_1
+All stages have completed sucessfully.
+User outputs:
+  HTVS_OUT_csv (incorporatable) [structures]:
+      vsw_run-HTVS_OUT_csv-001.csv

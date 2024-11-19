@@ -1,0 +1,91 @@
+########## Virtual Screening Workflow Input File ###############
+# Run as: $SCHRODINGER/vsw <inputfile>
+# SET Keywords: FILE(s), VARCLASS(Grid,Structures)
+
+[SET:ORIGINAL_LIGANDS]
+    VARCLASS   Structures
+    FILES   root_path/ligand.smi,
+
+[SET:GRID_1]
+    VARCLASS   Grid
+    FILE   root_path/grid.zip
+
+[STAGE:GENLIGAND]
+    STAGECLASS   convert.ConvertStage
+    INPUTS   ORIGINAL_LIGANDS,
+    OUTPUTS   LIGANDS
+    OUTFORMAT   maestro
+
+[STAGE:LIGPREP]
+    STAGECLASS   ligprep.LigPrepStage
+    INPUTS   LIGANDS,
+    OUTPUTS   LIGPREP_OUT,
+    RECOMBINE   YES
+    RETITLE   YES
+    MIXLIGS   YES
+    SKIP_BAD_LIGANDS   YES
+    UNIQUEFIELD   NONE
+    OUTCOMPOUNDFIELD   s_vsw_compound_code
+    USE_EPIK   YES
+    METAL_BINDING   YES
+    PH   7.0
+    PHT   2.0
+    NRINGCONFS   1
+    COMBINEOUTS   NO
+    STEREO_SOURCE   parities
+    NUM_STEREOISOMERS   32
+    MAX_STEREOISOMERS   4
+    REGULARIZE   NO
+
+[STAGE:POSTLIGPREP]
+    STAGECLASS   ligprep.PostLigPrepStage
+    INPUTS   LIGPREP_OUT,
+    OUTPUTS   POSTLIGPREP_OUT,
+    UNIQUEFIELD   s_vsw_compound_code
+    OUTVARIANTFIELD   s_vsw_variant
+    PRESERVE_NJOBS   YES
+    REMOVE_PENALIZED_STATES   YES
+
+[STAGE:PRE_DOCK_HTVS_1]
+    STAGECLASS   gencodes.RecombineStage
+    INPUTS   POSTLIGPREP_OUT,
+    OUTPUTS   DOCK_HTVS_1_INPUT,
+    NUMOUT   njobs
+    OUTFORMAT   maegz
+    MIN_SUBJOB_STS   4000
+    MAX_SUBJOB_STS   40000
+    GENCODES   NO
+    UNIQUEFIELD   s_vsw_compound_code
+
+[STAGE:DOCK_HTVS_1]
+    STAGECLASS   glide.DockingStage
+    INPUTS   DOCK_HTVS_1_INPUT, GRID_1
+    OUTPUTS   HTVS_OUT_1,
+    RECOMBINE   NO
+    PRECISION   SP
+    UNIQUEFIELD   s_vsw_compound_code
+    PERCENT_TO_KEEP   100.0
+    DOCKING_METHOD   confgen
+    POSES_PER_LIG   1
+    BEST_BY_TITLE   YES
+    LIG_VSCALE   0.8
+    LIG_CCUT   0.15
+    MAXATOMS   300
+    MAXROTBONDS   50
+    AMIDE_MODE   penal
+    POSE_OUTTYPE   PV
+    POSTDOCK   NO
+    POSTDOCKSTRAIN   NO
+    COMPRESS_POSES   YES
+    EPIK_PENALTIES   NO
+    FORCEPLANAR   NO
+
+[STAGE:ConvertOut]
+    STAGECLASS   convert.ConvertStage
+    INPUTS   HTVS_OUT_1
+    OUTPUTS   HTVS_OUT_csv
+    OUTFORMAT   smilescsv
+
+[USEROUTS]
+    USEROUTS   HTVS_OUT_csv
+    STRUCTOUT  HTVS_OUT_csv

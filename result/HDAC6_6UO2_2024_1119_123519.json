@@ -1,0 +1,49 @@
+{
+  "date": "2024-11-19 12:36",
+  "config": {
+    "target": "HDAC6_6UO2",
+    "original": "O=C(CCCCCCC(=O)NO)NO",
+    "header": "",
+    "joined": [],
+    "egroup": [],
+    "popsize": 80,
+    "childsize": 4,
+    "genebatch": 8,
+    "vfactor": 0.3,
+    "compete": false,
+    "enhance": 0,
+    "EDmodel": {
+      "model": "/opt/jupyter/molmod/DGMM_github/DGMM/model/",
+      "maxtrys": 80,
+      "childsize": 4,
+      "MAXLEN": 80
+    },
+    "Filter": {
+      "sim": 0.2,
+      "qedthd": 0.4,
+      "sathd": 3.0,
+      "dock_grids": [
+        "HDAC6_6UO2"
+      ],
+      "sim_increase": 0
+    },
+    "path": "result",
+    "loglevel": 0,
+    "savepath": "result/HDAC6_6UO2_2024_1119_123519.json"
+  },
+  "pop": [
+    "CCCCCC(=O)CC(=O)OCCN",
+    "O=C(CCCCCCC(=O)NO)NO",
+    "CNC(=O)C[CH]CCCCC(=O)OC",
+    "CCOC(=O)CCCCCC(=O)OC"
+  ],
+  "header": "O=C(CCCCCCC(=O)NO)NO",
+  "headers": [
+    "O=C(CCCCCCC(=O)NO)NO"
+  ],
+  "epoch": 1,
+  "log": [
+    "2024-11-19 12:35: new mol  start",
+    "{\n  \"init\": true,\n  \"epoch\": 0,\n  \"header\": \"O=C(CCCCCCC(=O)NO)NO\",\n  \"best\": \"CCCCCC(=O)CC(=O)OCCN\",\n  \"popsize\": 4,\n  \"pop10\": [\n    \"CCCCCC(=O)CC(=O)OCCN\",\n    \"O=C(CCCCCCC(=O)NO)NO\",\n    \"CNC(=O)C[CH]CCCCC(=O)OC\",\n    \"CCOC(=O)CCCCCC(=O)OC\"\n  ],\n  \"score\": [\n    -3.74272759783307,\n    -3.54443538411945,\n    -3.20532883202719,\n    -2.90880914005128\n  ]\n}"
+  ]
+}

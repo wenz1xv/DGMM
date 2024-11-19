@@ -1,0 +1,278 @@
+Glide version 101132 (mmshare version 64132)
+mmshare         fe6f4b4e17
+glide-src       caa4c59e65
+psp-src         86ad505f80
+macromodel-src  a1e2893b06
+epik-src        dac97ffddd
+
+Copyright (c) Schrodinger, LLC.
+All Rights Reserved.
+
+--------------------------------------------------------------------------------
+JobId          : dellt7920-0-673c160c
+Name           : vsw_run-DOCK_HTVS_1-001
+Program        : Glide
+Version        : 2023-4 build 132
+Host           : dellt7920
+Dir            : /opt/jupyter/molmod/DGMM_github/DGMM/dock_comp/schrodinger_run/schrodinger_SP/run_0
+HostEntry      : localhost
+JobHost        : dellt7920
+JobDir         : /home/zyman/.schrodinger/tmp/vsw_run-DOCK_HTVS_1-001
+JobSchrodinger : /opt/schrodinger2023-4
+Commandline    : /opt/schrodinger2023-4/glide -RESTART vsw_run-DOCK_HTVS_1-001.in -HOST localhost
+StartTime      : 2024-11-19-12:37:32
+--------------------------------------------------------------------------------
+
+ VdW radii of ligand atoms scaled by   0.800000000000000     
+ Charge cutoff for polarity   0.150000000000000     
+ After readscreen, (nx, ny, nz) = (          28 ,           28 ,           28 ).
+  Receptor setup: (nsites, nx, ny, nz, bsize)=(         125 ,           28 , 
+          28 ,           28 ,    1.00000000000000      ).
+ Screening setup finished.
+ DOCKMAIN: getting receptor.
+  DOCKMAIN after grid: (nx, ny, nz) = (          72 ,           72 , 
+          72 ).
+
+ Metal   At. Num.  Eff. Charge  Category    x         y         z
+ 2646      30        0.00           2    42.737    35.353    52.498
+  
+ DOCKMAIN: Grid setup finished
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+  
+  Penalizing non-planar amide torsions 
+  
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+
+GlideScore version SP5.0 will be used
+
+  
+ Buried polar penalty      0.000
+ Coulomb vdW cutoff        0.000
+ H bond cutoff             0.000
+ Metal-ligand cutoff      10.000
+Assigning GlideScore SP5.0 parameters
+DOCKING RESULTS FOR LIGAND        1 (0)
+Best Emodel=   -67.81 E=   -39.43 Eint=     3.00 GlideScore=    -3.86
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND        2 (0)
+Best Emodel=   -69.59 E=   -38.73 Eint=     2.86 GlideScore=    -4.14
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND        3 (1)
+Best Emodel=   -61.84 E=   -33.57 Eint=     4.87 GlideScore=    -2.62
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND        4 (1)
+Best Emodel=   -60.79 E=   -34.86 Eint=     5.61 GlideScore=    -2.52
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND        5 (2)
+Best Emodel=   -61.82 E=   -33.35 Eint=     5.81 GlideScore=    -2.81
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND        6 (2)
+Best Emodel=   -66.04 E=   -32.80 Eint=     2.89 GlideScore=    -3.32
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND        7 (2)
+Best Emodel=   -58.95 E=   -33.72 Eint=    10.26 GlideScore=    -3.80
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND        8 (2)
+Best Emodel=   -56.82 E=   -34.55 Eint=     7.07 GlideScore=    -3.03
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND        9 (3)
+Best Emodel=   -72.39 E=   -40.32 Eint=     6.27 GlideScore=    -3.57
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       10 (4)
+Best Emodel=   -70.27 E=   -37.01 Eint=     8.15 GlideScore=    -3.45
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       11 (4)
+Best Emodel=   -71.25 E=   -35.15 Eint=     7.46 GlideScore=    -2.97
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       12 (5)
+Best Emodel=   -74.96 E=   -38.05 Eint=     4.43 GlideScore=    -1.11
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       13 (6)
+Best Emodel=   -58.42 E=   -36.71 Eint=     5.95 GlideScore=    -1.68
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       14 (7)
+Best Emodel=   -73.30 E=   -33.01 Eint=     5.84 GlideScore=    -2.23
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       15 (8)
+Best Emodel=   -61.13 E=   -35.85 Eint=     6.17 GlideScore=    -2.75
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       16 (9)
+Best Emodel=   -65.05 E=   -33.03 Eint=     5.16 GlideScore=    -1.68
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       17 (10)
+Best Emodel=   -67.20 E=   -38.02 Eint=     6.02 GlideScore=    -3.10
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       18 (11)
+Best Emodel=   -79.43 E=   -42.40 Eint=     4.99 GlideScore=    -3.82
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       19 (11)
+Best Emodel=   -81.88 E=   -41.15 Eint=     4.96 GlideScore=    -4.96
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       20 (11)
+Best Emodel=  -109.86 E=   -39.86 Eint=     3.96 GlideScore=    -2.75
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       21 (11)
+Best Emodel=  -109.85 E=   -39.29 Eint=     4.42 GlideScore=    -2.61
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       22 (12)
+Best Emodel=   -59.47 E=   -32.68 Eint=     1.92 GlideScore=    -0.48
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       23 (13)
+Best Emodel=   -71.60 E=   -40.99 Eint=    11.03 GlideScore=    -3.34
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       24 (14)
+Best Emodel=   -74.10 E=   -41.13 Eint=     4.74 GlideScore=    -2.34
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       25 (15)
+Best Emodel=   -56.30 E=   -32.53 Eint=     7.01 GlideScore=    -2.48
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       26 (16)
+Best Emodel=   -64.88 E=   -37.98 Eint=     3.17 GlideScore=    -0.40
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       27 (16)
+Best Emodel=   -84.20 E=   -40.23 Eint=     5.30 GlideScore=    -3.84
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       28 (17)
+Best Emodel=   -74.92 E=   -41.09 Eint=     2.20 GlideScore=    -3.53
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       29 (18)
+Best Emodel=   -72.39 E=   -40.32 Eint=     6.27 GlideScore=    -3.57
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       30 (19)
+Best Emodel=   -76.14 E=   -37.09 Eint=    10.76 GlideScore=    -3.25
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       31 (20)
+Best Emodel=   -64.08 E=   -35.45 Eint=     2.69 GlideScore=    -2.17
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       32 (20)
+Best Emodel=   -60.99 E=   -37.76 Eint=     7.47 GlideScore=    -2.82
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+DOCKING RESULTS FOR LIGAND       33 (21)
+Best Emodel=   -55.28 E=   -32.86 Eint=     3.68 GlideScore=    -1.17
+
+Glide is executing the glide_sort command.
+Command used is:
+  "/opt/schrodinger2023-4/utilities/glide_sort" -n 33 -o "vsw_run-DOCK_HTVS_1-001_pv.maegz"   -hbond_cut 0.00 -cvdw_cut 0.00 -metal_cut 10.00 -gscore_cut 100.00 -dscore_cut 100.00 "vsw_run-DOCK_HTVS_1-001_raw.maegz"
+                                  Glide Sort                                  
+------------------------------------------------------------------------------
+REPORT OF BEST 33 POSES
+
+The receptor and sorted ligand structures were written to the Pose Viewer file:
+    vsw_run-DOCK_HTVS_1-001_pv.maegz
+
+Final rankings based on original docking score.
+
+0 poses were rejected by the energy filters,
+    Coul+vdw Energy    <=     0.0
+    Hbond Interaction  <=     0.0
+    Metal Interaction  <=    10.0
+    GlideScore         <=   100.0
+    Docking Score      <=   100.0
+(If any of the above properties is not defined for a given pose,
+ the corresponding filter is not applied to that pose.)
+
+
+glide_sort command succeeded.  Pose file vsw_run-DOCK_HTVS_1-001_pv.maegz was written.
+
+Exiting Glide
+Date: Tuesday, November 19 2024, at 12:46:59 CST
+CPU time (s): 563.5 user, 0.3 system, 565.4 real
+Total elapsed time = 565 seconds (9 minutes, 25 seconds)

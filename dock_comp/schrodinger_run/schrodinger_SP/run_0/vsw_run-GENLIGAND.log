@@ -1,0 +1,20 @@
+Stage vsw_run-GENLIGAND initializing...
+
+Running stage: vsw_run-GENLIGAND
+SCHRODINGER: /opt/schrodinger2023-4
+PYTHONPATH: 
+Job ID: dellt7920-0-673c15ee
+Time: Tue Nov 19 12:37:03 2024
+Stage started successfully
+
+Python version: 83132
+INFO priv_mmphob_read_rules: using init file 'mmphob.ini'
+
+Converted files: ['vsw_run-LIGANDS-001.maegz']
+
+STAGE COMPLETED. Elapsed time: 0 seconds
+
+    Output #1 (vsw_run-LIGANDS) [structures]:
+      vsw_run-LIGANDS-001.maegz
+Moving vsw_run-LIGANDS-001.maegz to /opt/jupyter/molmod/DGMM_github/DGMM/dock_comp/schrodinger_run/schrodinger_SP/run_0/vsw_run-LIGANDS-001.maegz
+Done.
