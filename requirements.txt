@@ -1,0 +1,17 @@
+absl-py==2.1.0
+grpcio==1.71.0
+keras==3.9.2
+matplotlib==3.10.1
+matplotlib-inline==0.1.7
+meeko==0.5.0
+numpy==1.26.4
+openbabel-wheel==3.1.1.21
+pydantic==2.10.6
+pydantic_core==2.27.2
+rdkit==2023.9.1
+selfies==2.2.0
+tensorflow==2.19.0
+vina==1.2.7
+tables==3.10.2
+unidock_tools==0.0.1
+ipykernel==6.29.5

@@ -1,0 +1,8 @@
+HEADER    Anchor 08-AUG-24 Si
+TITLE   Si as Cordinate Anchor
+REMARK   4 Si COMPLIES WITH FORMAT V. 3.30,
+REMARK 888
+REMARK 888 WRITTEN BY Zyman
+HETATM    1 SI   UNL     1       0.000   0.000   0.000  1.00  0.00          Si  
+MASTER        0    0    0    0    0    0    0    0    1    0    1    0
+END
