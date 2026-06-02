@@ -57,4 +57,20 @@ Refer to `DGMM_[SCH/UniDocl/Vina].ipynb` for detailed guidance on running the DG
 ## Citation
 If you use DGMM in your research or incorporate our algorithms in your work, please cite our paper:
 
-*(Provide citation information here once available.)*
+**DGMM: A Deep Learning-Genetic Algorithm Framework for Efficient Lead Optimization in Drug Discovery**
+Jiebin Fang, Churu Mao, Yuchen Zhu, Xiaoming Chen, Yun Huang, Wanjing Ding, Chang-Yu Hsieh, and Zhongjun Ma
+*Journal of Chemical Information and Modeling*, 2025, 65(15), 8168–8180.
+https://doi.org/10.1021/acs.jcim.5c01017
+
+```bibtex
+@article{fang2025dgmm,
+  title = {DGMM: A Deep Learning-Genetic Algorithm Framework for Efficient Lead Optimization in Drug Discovery},
+  author = {Fang, Jiebin and Mao, Churu and Zhu, Yuchen and Chen, Xiaoming and Huang, Yun and Ding, Wanjing and Hsieh, Chang-Yu and Ma, Zhongjun},
+  journal = {Journal of Chemical Information and Modeling},
+  year = {2025},
+  volume = {65},
+  number = {15},
+  pages = {8168--8180},
+  doi = {10.1021/acs.jcim.5c01017}
+}
+```
